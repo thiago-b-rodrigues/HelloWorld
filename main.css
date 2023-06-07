@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=PT+Serif:wght@400;700&display=swap');
+
+:root{
+    --title-color: #0C134F;
+    --light-blue: #00E7FF;
+    --gray: #BACDDB;
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem; 
+}
+
+.title{
+    color: var(--title-color);
+    font-family: 'PT Serif', serif;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+.emphasis.blue{
+    font-weight: bold;
+    color: var(--light-blue);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+.subtitle{
+    display: block;
+    color: var(--gray);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+main{
+    width: max(45%, 30rem);
+    min-height: 100vh;
+}
+
+/*-------------------------------------*/
+::-webkit-scrollbar {
+    width: 1.3rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089);
+}
+   
+::-webkit-scrollbar-thumb {   
+    background: #9db2bfa8; 
+    border-radius: 1rem;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--title-color);
+}
+
+
+/*------------------------------------*/
+.phrase-container{
+    height: 30vh;
+}
+
+.phrase-container.flex{
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.phrase-container h1{
+    margin-bottom: 2rem;
+}
+
+/*------------------------------------*/
+.cards-containers{
+    margin-top: 5rem;
+    width: 87%;
+}
+
+.card{
+    margin-bottom: 2rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    background-color: white;
+    width: 100%;
+    min-width: 32rem;
+    min-height: 10rem;
+    border: 2px solid #f5f5f5;
+}
+
+.card .cabecalho {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.cabecalho.flex{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.card .cabecalho img{
+    object-fit: cover;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 7rem;
+}
+
+.card .cabecalho .link{
+    color: var(--title-color);
+    font-size: 1.9rem;
+    font-weight: bolder;
+}
+
+.card .descr{
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.card .vid{
+    border-radius: 1rem;
+    width: 100%;
+    height: 241.88px;
+}
+
+.card ul, .card ol{
+    width: 90%;
+}
+
+@media (max-width: 36rem) {
+    .phrase-container{
+        height: 50vh;
+        padding: 0px 1rem;
+    }
+
+    .phrase-container h1{
+        font-size: 2rem;
+    }
+
+    .card .vid{
+        object-fit: cover;
+        border-radius: 1rem;
+        height: 160px;
+    }
+}
+
+
